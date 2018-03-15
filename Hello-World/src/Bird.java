@@ -18,6 +18,7 @@ public class Bird {
 	public static void move() {
 		Konst.BirdY += 20;
 		System.out.println(Konst.BirdY);
+		.
 	}
 	
 }
