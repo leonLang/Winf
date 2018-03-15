@@ -36,6 +36,7 @@ public class Frame extends JFrame {
 		initBoard();
 
 		add(panel);
+
 		
 
 	}
@@ -49,13 +50,13 @@ private void initBoard() {
     }
 private void loadImage() {
     
-    ImageIcon ii = new ImageIcon("bg1.png");
+    ImageIcon ii = new ImageIcon("bg.png");
     img = ii.getImage();        
 }
-@Override
+
 public void paintComponent(Graphics g) {
 
-    g.drawImage(img, 0, 1, null);
+    g.drawImage(img, 0, 0, null);
 }
 }
 
