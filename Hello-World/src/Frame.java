@@ -6,9 +6,11 @@ import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
 
+import javax.imageio.IIOException;
 import javax.imageio.ImageIO;
 import javax.swing.ImageIcon;
 import javax.swing.JFrame;
+import javax.swing.JLabel;
 import javax.swing.JPanel;
 
 public class Frame extends JFrame {
@@ -31,11 +33,11 @@ public class Frame extends JFrame {
 	private void pan() {
 		JPanel panel = new JPanel();
 		//Leon
-
-		panel.setBackground(Color.red);
-		initBoard();
-
 		add(panel);
+		//panel.setBackground(Color.red);
+		initBoard();
+		
+
 		
 
 	}
@@ -45,18 +47,19 @@ private void initBoard() {
         
         int w = img.getWidth(this);
         int h =  img.getHeight(this);
-        setPreferredSize(new Dimension(w, h));        
+        setPreferredSize(new Dimension(w, h));      
+    	JLabel labelb = new JLabel(new ImageIcon(img1));
     }
 private void loadImage() {
+	try {
     
-    ImageIcon ii = new ImageIcon("bg1.png");
-    img = ii.getImage();        
-}
-@Override
-public void paintComponent(Graphics g) {
+ BufferedImage img1 = ImageIO.read(new File("bg1.png")); 
+	panel.add(labelb);
+	} catch (IOException e) {
+		System.out.println("Fehler Beim Laden des Bildes");
+		}
+	}
 
-    g.drawImage(img, 0, 1, null);
-}
 }
 
 
