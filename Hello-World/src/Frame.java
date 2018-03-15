@@ -15,7 +15,7 @@ public class Frame extends JFrame {
 		setTitle(Konst.TITLE);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setSize(Konst.WIDTH, Konst.HEIGHT);
-		
+		setResizable(false);
 		
 		
 	}
