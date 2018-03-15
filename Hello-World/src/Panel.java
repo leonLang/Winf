@@ -5,7 +5,9 @@ import javax.imageio.ImageIO;
 import javax.swing.JPanel;
 
 public class Panel extends JPanel{
-	 private BufferedImage image;
+
+	private static final long serialVersionUID = 1L;
+	private BufferedImage image;
 
 	//Leon
 	public Panel() {

@@ -1,17 +1,9 @@
-import java.awt.Color;
-import java.awt.Dimension;
-import java.awt.Graphics;
 import java.awt.Image;
-import java.awt.image.BufferedImage;
-import java.io.File;
-import java.io.IOException;
-
-import javax.imageio.ImageIO;
-import javax.swing.ImageIcon;
 import javax.swing.JFrame;
-import javax.swing.JPanel;
 
 public class Frame extends JFrame {
+
+	private static final long serialVersionUID = 1L;
 	//peter
 	Image img;
 	public Frame() {
@@ -30,11 +22,12 @@ public class Frame extends JFrame {
 	}
 	private void pan() {
 		Panel panel = new Panel();
+		Bird bird = new Bird();
 		//Leon
 
 		//panel.setBackground(Color.red);
 
-
+		add(bird);
 		add(panel);
 
 		
