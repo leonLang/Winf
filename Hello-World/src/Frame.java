@@ -29,16 +29,9 @@ public class Frame extends JFrame {
 		Pipe pipe = new Pipe();
 		//Leon
 		addKeyListener(control);
-
-		//panel.setBackground(Color.red);
 		
-
 		add(panel);
-		//Leon
 		setVisible(true);
-
-		
-
 	}
 
 }
