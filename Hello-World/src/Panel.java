@@ -1,5 +1,4 @@
 import java.awt.Graphics;
-import java.awt.Image;
 import java.awt.image.BufferedImage;
 import java.io.IOException;
 import javax.imageio.ImageIO;
@@ -15,8 +14,9 @@ public class Panel extends JPanel{
 		} catch(IOException e) {
 			e.printStackTrace();
 		}
+		repaint();
 	}
-	@Override
+
 	public void paintComponent(Graphics g) {
 		super.paintComponent(g);
 	     g.fillRect(100,100,150,250);
