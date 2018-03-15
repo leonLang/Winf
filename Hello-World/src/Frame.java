@@ -29,35 +29,18 @@ public class Frame extends JFrame {
 		
 	}
 	private void pan() {
-		JPanel panel = new JPanel();
+		Panel panel = new Panel();
 		//Leon
 
-		panel.setBackground(Color.red);
-		initBoard();
+		//panel.setBackground(Color.red);
+
 
 		add(panel);
 
 		
 
 	}
-private void initBoard() {
-        
-        loadImage();
-        
-        int w = img.getWidth(this);
-        int h =  img.getHeight(this);
-        setPreferredSize(new Dimension(w, h));        
-    }
-private void loadImage() {
-    
-    ImageIcon ii = new ImageIcon("bg.png");
-    img = ii.getImage();        
 }
 
-public void paintComponent(Graphics g) {
-
-    g.drawImage(img, 0, 0, null);
-}
-}
 
 
