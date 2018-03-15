@@ -16,11 +16,13 @@ public class Frame extends JFrame {
 		
 	}
 	private void initFrame() {
+		KeyP key = new KeyP();
 		setTitle(Konst.TITLE);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setSize(Konst.WIDTH, Konst.HEIGHT);
 		setResizable(false);
-		
+		addKeyListener(key);
+
 		
 	}
 	private void pan() {
