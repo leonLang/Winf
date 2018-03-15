@@ -21,7 +21,7 @@ public class Panel extends JPanel{
 
 	public void paintComponent(Graphics g) {
 
-	     g.drawImage(image, 0,0, null);
+	     g.drawImage(image, 0,0,Konst.HEIGHT,Konst.WIDTH, null);
 	     System.out.println("ja");
 	     Bird.paint12(g);
 	}
