@@ -19,6 +19,6 @@ public class Pipe {
 	
 	public static void paintP(Graphics g) {
 		
-		g.drawImage(pipe1, 0,0,Konst.HEIGHT,Konst.WIDTH, null);
+		g.drawImage(pipe1, 0,0,100,100, null);
 	}
 }
