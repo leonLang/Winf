@@ -13,7 +13,6 @@ public class Frame extends JFrame {
 	}
 	private void initFrame() {
 		setTitle(Konst.TITLE);
-		setVisible(true);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setSize(Konst.WIDTH, Konst.HEIGHT);
 		
