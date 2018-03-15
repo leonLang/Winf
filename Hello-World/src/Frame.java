@@ -25,7 +25,6 @@ public class Frame extends JFrame {
 	private void pan() {
 		JPanel panel = new JPanel();
 		//Leon
-		public Image img;
 
 		panel.setBackground(Color.red);
 		
@@ -33,6 +32,7 @@ public class Frame extends JFrame {
 		add(panel);
 	}
 private void initBoard() {
+	Image img = null;
         
         loadImage();
         
