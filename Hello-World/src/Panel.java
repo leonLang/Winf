@@ -23,7 +23,7 @@ public class Panel extends JPanel{
 
 	     g.drawImage(image, 0,0, null);
 	     System.out.println("ja");
-	     Bird.paint12(g);
+	     Bird.paint(g);
 	}
  
 }
