@@ -8,10 +8,11 @@ import javax.imageio.ImageIO;
 public class Pipe {
 	//Leon
 	private static BufferedImage pipe1;
-	private BufferedImage pipe2;
+	private static BufferedImage pipe2;
 	public Pipe() {
 		try {
-			pipe1 = ImageIO.read(getClass().getResourceAsStream("/tube1.png"));
+			pipe1 = ImageIO.read(getClass().getResourceAsStream(Konst.pipeO));
+			pipe2 = ImageIO.read(getClass().getResourceAsStream(Konst.pipeU));
 			} catch(IOException e) {
 				e.printStackTrace();
 			}
@@ -20,5 +21,6 @@ public class Pipe {
 	public static void paintP(Graphics g) {
 		
 		g.drawImage(pipe1, 0,0,100,100, null);
+		g.drawImage(pipe2, 0,700,100,100, null);
 	}
 }
