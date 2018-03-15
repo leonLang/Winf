@@ -8,6 +8,7 @@ import javax.swing.JPanel;
 
 public class Frame extends JFrame {
 	//peter
+	Image img;
 	public Frame() {
 		initFrame();
 		pan();
@@ -32,7 +33,6 @@ public class Frame extends JFrame {
 		add(panel);
 	}
 private void initBoard() {
-	Image img = null;
         
         loadImage();
         
