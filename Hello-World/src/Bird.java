@@ -10,7 +10,7 @@ public class Bird {
 	public Bird() {
 		
 	}
-	public void paint(Graphics g) {
+	public static void paint12(Graphics g) {
 		
 		final int BirdX = Konst.HEIGHT/2; 
 		int BirdY = Konst.WIDTH/2;
