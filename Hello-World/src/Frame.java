@@ -42,7 +42,7 @@ private void initBoard() {
     }
 private void loadImage() {
     
-    ImageIcon ii = new ImageIcon("bg.png");
+    ImageIcon ii = new ImageIcon("bg1.png");
     bardejov = ii.getImage();        
 }
 }
