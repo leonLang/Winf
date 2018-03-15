@@ -11,8 +11,8 @@ public class Pipe {
 	private static BufferedImage pipe2;
 	public Pipe() {
 		try {
-			pipe1 = ImageIO.read(getClass().getResourceAsStream("/tube1.png"));
-			pipe2 = ImageIO.read(getClass().getResourceAsStream("/tube2.png"));
+			pipe1 = ImageIO.read(getClass().getResourceAsStream(Konst.pipeO));
+			pipe2 = ImageIO.read(getClass().getResourceAsStream(Konst.pipeU));
 			} catch(IOException e) {
 				e.printStackTrace();
 			}
