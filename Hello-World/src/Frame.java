@@ -9,7 +9,7 @@ public class Frame extends JFrame {
 	private static final long serialVersionUID = 1L;
 	Control control = new Control();
 	//peter
-	Image img;
+	//Constructor
 	public Frame() {
 		initFrame();
 		pan();
