@@ -10,11 +10,14 @@ public class Bird {
 	}
 	public static void paint(Graphics g) {
 		
-		final int BirdX = Konst.HEIGHT/2; 
-		int BirdY = Konst.WIDTH/2;
 		
 		Graphics2D g2 = (Graphics2D)g;
-		g2.fillRect(BirdX, BirdY, 20, 20);
+		g2.fillRect(Konst.BirdX, Konst.BirdY, 20, 20);
 	}
 
+	public static void move() {
+		Konst.BirdY += 20;
+		System.out.println(Konst.BirdY);
+	}
+	
 }
