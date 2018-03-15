@@ -1,5 +1,8 @@
 import java.awt.Color;
+import java.awt.Dimension;
+import java.awt.Image;
 
+import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 
@@ -21,11 +24,25 @@ public class Frame extends JFrame {
 	}
 	private void pan() {
 		JPanel panel = new JPanel();
-		
+		//Leon
+		public Image img;
+
 		panel.setBackground(Color.red);
 		
 		
 		add(panel);
 	}
-
+private void initBoard() {
+        
+        loadImage();
+        
+        int w = img.getWidth(this);
+        int h =  img.getHeight(this);
+        setPreferredSize(new Dimension(w, h));        
+    }
+private void loadImage() {
+    
+    ImageIcon ii = new ImageIcon("bg.png");
+    bardejov = ii.getImage();        
+}
 }
