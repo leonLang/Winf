@@ -1,12 +1,13 @@
 import java.awt.Graphics;
-import java.awt.Image;
 import java.awt.image.BufferedImage;
 import java.io.IOException;
 import javax.imageio.ImageIO;
 import javax.swing.JPanel;
 
 public class Panel extends JPanel{
-	 private BufferedImage image;
+
+	private static final long serialVersionUID = 1L;
+	private BufferedImage image;
 
 	//Leon
 	public Panel() {
