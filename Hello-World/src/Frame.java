@@ -23,6 +23,7 @@ public class Frame extends JFrame {
 	private void pan() {
 		Panel panel = new Panel();
 		Bird bird = new Bird();
+		bird.setToolTipText("wrum");
 		//Leon
 
 		//panel.setBackground(Color.red);
