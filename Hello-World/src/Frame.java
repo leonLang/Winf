@@ -27,7 +27,7 @@ public class Frame extends JFrame {
 
 		//panel.setBackground(Color.red);
 
-		add(bird);
+
 		add(panel);
 		//Leon
 		setVisible(true);
