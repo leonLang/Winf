@@ -22,10 +22,11 @@ public class Frame extends JFrame {
 	private void pan() {
 		Panel panel = new Panel();
 		Bird bird = new Bird();
+		Pipe pipe = new Pipe();
 		//Leon
 
 		//panel.setBackground(Color.red);
-
+		
 
 		add(panel);
 		//Leon
