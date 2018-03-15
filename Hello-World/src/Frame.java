@@ -1,7 +1,12 @@
 import java.awt.Color;
 import java.awt.Dimension;
+import java.awt.Graphics;
 import java.awt.Image;
+import java.awt.image.BufferedImage;
+import java.io.File;
+import java.io.IOException;
 
+import javax.imageio.ImageIO;
 import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
@@ -28,9 +33,11 @@ public class Frame extends JFrame {
 		//Leon
 
 		panel.setBackground(Color.red);
-		
-		
+		initBoard();
+
 		add(panel);
+		
+
 	}
 private void initBoard() {
         
@@ -45,4 +52,11 @@ private void loadImage() {
     ImageIcon ii = new ImageIcon("bg1.png");
     img = ii.getImage();        
 }
+@Override
+public void paintComponent(Graphics g) {
+
+    g.drawImage(img, 0, 0, null);
+}
+}
+
 }
