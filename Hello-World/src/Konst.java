@@ -7,5 +7,6 @@ public class Konst {
 	public static final String TITLE = "flappy";
 	//Leon
 	public static String bird = "/bg.png";
+	
 
 }
