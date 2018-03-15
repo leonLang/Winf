@@ -12,7 +12,7 @@ public class Panel extends JPanel{
 	//Leon
 	public Panel() {
 		try {
-		image = ImageIO.read(getClass().getResourceAsStream("bg.png"));
+		image = ImageIO.read(getClass().getResourceAsStream("/bg.png"));
 		} catch(IOException e) {
 			e.printStackTrace();
 		}
@@ -20,9 +20,9 @@ public class Panel extends JPanel{
 	}
 
 	public void paintComponent(Graphics g) {
-		super.paintComponent(g);
-	     g.fillRect(100,100,150,250);
-	     g.drawImage(image, 100, 100,1000,1000, null);
+
+	     g.drawImage(image, 0,0, null);
+	     System.out.println("ja");
 	}
  
 }

@@ -29,6 +29,8 @@ public class Frame extends JFrame {
 
 		add(bird);
 		add(panel);
+		//Leon
+		setVisible(true);
 
 		
 
