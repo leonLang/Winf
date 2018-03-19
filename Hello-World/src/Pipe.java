@@ -20,7 +20,7 @@ public class Pipe {
 		}
 	
 	public static void paintP(Graphics g) {
-		x =x+1;
+		x +=1;
 		try {
 			Thread.sleep(10);
 		} catch (InterruptedException e) {
