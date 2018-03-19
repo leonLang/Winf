@@ -29,6 +29,12 @@ public class Panel extends JPanel {
 		while (Konst.run = true) {
             System.out.println("klappt");
             repaint();
+            try {
+				Thread.sleep(1337);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
         }
 
 	     g.drawImage(image, 0,0,Konst.HEIGHT,Konst.WIDTH, null);
