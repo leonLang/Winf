@@ -20,12 +20,7 @@ public class Pipe {
 	
 	public static void paintP(Graphics g) {
 		x +=1;
-		try {
-			Thread.sleep(10);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+
 		g.drawImage(pipe1, 0,x,100,100, null);
 		g.drawImage(pipe2, 0,700,100,100, null);
 	}

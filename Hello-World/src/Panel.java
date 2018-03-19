@@ -25,7 +25,13 @@ public class Panel extends JPanel {
 
 	public void paintComponent(Graphics g) {
 		super.paintComponent(g);
-		repaint();
+		try {
+			Thread.sleep(10);
+			repaint();
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 
 	     g.drawImage(image, 0,0,Konst.HEIGHT,Konst.WIDTH, null);
 	     Bird.paint(g);
