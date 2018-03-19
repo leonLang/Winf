@@ -9,11 +9,11 @@ import javax.imageio.ImageIO;
 import javax.swing.JPanel;
 import javax.swing.Timer;
 
-public class Panel extends JPanel implements ActionListener{
+public class Panel extends JPanel {
 
 	private static final long serialVersionUID = 1L;
 	private BufferedImage image;
-	Timer t = new Timer(1,this);
+
 
 	//Leon
 	public Panel() {
@@ -26,6 +26,10 @@ public class Panel extends JPanel implements ActionListener{
 
 	public void paintComponent(Graphics g) {
 		super.paintComponent(g);
+		while (Konst.run = true) {
+            System.out.println("klappt");
+            repaint();
+        }
 
 	     g.drawImage(image, 0,0,Konst.HEIGHT,Konst.WIDTH, null);
 	     System.out.println("ja");
@@ -33,17 +37,9 @@ public class Panel extends JPanel implements ActionListener{
 	     Bird.paint(g);
 
 	     Pipe.paintP(g);
-	     t.start();
-	}
-	public void ActionPerformed(ActionEvent e) {
-		repaint();
+
 	}
 
-	@Override
-	public void actionPerformed(ActionEvent arg0) {
-		// TODO Auto-generated method stub
-		
-	}
  
 }
 
