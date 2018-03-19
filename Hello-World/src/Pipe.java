@@ -7,6 +7,7 @@ import javax.imageio.ImageIO;
 
 public class Pipe {
 	//Leon
+	public static int x;
 	private static BufferedImage pipe1;
 	private static BufferedImage pipe2;
 	public Pipe() {
@@ -19,8 +20,13 @@ public class Pipe {
 		}
 	
 	public static void paintP(Graphics g) {
-		int x;
-		x= x+1;
+		x =x+1;
+		try {
+			Thread.sleep(100);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		g.drawImage(pipe1, 0,x,100,100, null);
 		g.drawImage(pipe2, 0,700,100,100, null);
 	}
