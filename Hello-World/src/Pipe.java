@@ -19,8 +19,9 @@ public class Pipe {
 		}
 	
 	public static void paintP(Graphics g) {
-		
-		g.drawImage(pipe1, 0,0,100,100, null);
+		int x;
+		x= x+1;
+		g.drawImage(pipe1, 0,x,100,100, null);
 		g.drawImage(pipe2, 0,700,100,100, null);
 	}
 }
