@@ -19,29 +19,20 @@ public class Panel extends JPanel {
 	public Panel() {
 		try {
 		image = ImageIO.read(getClass().getResourceAsStream(Konst.bird));
+		
 		} catch(IOException e) {
 			e.printStackTrace();
 		}
 	}
+	
 
 	public void paintComponent(Graphics g) {
 		super.paintComponent(g);
-		while (Konst.run = true) {
-            System.out.println("klappt");
-            repaint();
-            try {
-				Thread.sleep(1337);
-			} catch (InterruptedException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
-        }
+		repaint();
 
 	     g.drawImage(image, 0,0,Konst.HEIGHT,Konst.WIDTH, null);
 	     System.out.println("ja");
-
 	     Bird.paint(g);
-
 	     Pipe.paintP(g);
 
 	}
