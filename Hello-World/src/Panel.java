@@ -22,11 +22,11 @@ public class Panel extends JPanel {
 		}
 	}
 	
-
+@Override
 	public void paintComponent(Graphics g) {
 		super.paintComponent(g);
 		try {
-			Thread.sleep(10);
+			Thread.sleep(16);
 			repaint();
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
