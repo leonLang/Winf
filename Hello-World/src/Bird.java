@@ -1,6 +1,5 @@
 
 import java.awt.Graphics;
-import java.awt.Graphics2D;
 import java.awt.Rectangle;
 import java.awt.image.BufferedImage;
 import java.io.IOException;
@@ -25,7 +24,7 @@ public class Bird {
 		if(Konst.BirdY >= 0) {
 		Konst.v = 0;
 		Konst.v -= 10;
-		System.out.println(Konst.BirdY);
+		//System.out.println(Konst.BirdY);
 		} else {
 			System.out.println("can t go higher");
 		}
@@ -35,7 +34,7 @@ public class Bird {
 		//Integer i = (int) Konst.v;
 		Konst.v += Konst.a;
 		Konst.BirdY += Konst.v;
-		System.out.println(Konst.v);
+		//System.out.println(Konst.v);
 		if(Konst.BirdY >= Konst.HEIGHT) {
 			Konst.run = false;
 		}

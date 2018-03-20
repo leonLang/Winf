@@ -10,10 +10,15 @@ public class Panel extends JPanel {
 
 	private static final long serialVersionUID = 1L;
 	private BufferedImage image;
+	private TextDisplay count;
 
 
 	//Leon
 	public Panel() {
+		count = new TextDisplay(Konst.WIDTH/2, Konst.HEIGHT/8,"hi");
+		
+		setLayout(null);
+		add(count);
 		try {
 		image = ImageIO.read(getClass().getResourceAsStream(Konst.bird));
 		
@@ -31,7 +36,6 @@ public class Panel extends JPanel {
 			repaint();
 			} else {
 				System.out.println("game stop");
-				repaint();
 			}
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
