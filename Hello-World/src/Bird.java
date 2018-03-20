@@ -1,5 +1,6 @@
 
 import java.awt.Graphics;
+import java.awt.Graphics2D;
 import java.awt.Rectangle;
 import java.awt.image.BufferedImage;
 import java.io.IOException;
@@ -46,12 +47,22 @@ public class Bird {
 			BL = BU;
 		}
 	}
+	public static void collision() {
+
+		
+	}
 	public static void paint(Graphics g) {
 		Rectangle r = new Rectangle(Konst.BirdX, Konst.BirdY, 20, 20);
 		physiks();
 		BirdG();
+		collision();
 		
 		g.drawImage(BL, Konst.BirdX, Konst.BirdY, 50, 50, null);
+		Graphics2D g2d = (Graphics2D) g;
+		Rectangle d = new Rectangle(20, 20 ,20, 20);
+		((Graphics2D) g).fill(d);
+		d.
+		
 		
 	}
 
