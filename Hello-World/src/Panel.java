@@ -44,8 +44,8 @@ public class Panel extends JPanel {
 	     Bird.paint(g);
 	     Pipe.generate(g);
 	     TextDisplay.font(g);
-	}
+	     Collision.collision();
 
- 
+}
 }
 

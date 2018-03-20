@@ -28,17 +28,17 @@ public class Pipe {
 		if (Konst.x1<-100){
 			Konst.x1=800;
 			Konst.y1 = ThreadLocalRandom.current().nextInt(Konst.rnd1, Konst.rnd2);
-			Konst.y2 = ThreadLocalRandom.current().nextInt(Konst.rnd3, Konst.rnd4);
+			Konst.y2 = Konst.y1+Konst.pAb;
 		}
 		if (Konst.x2<-100){
 			Konst.x2=800;
 			Konst.y3 = ThreadLocalRandom.current().nextInt(Konst.rnd1, Konst.rnd2);
-			Konst.y4 = ThreadLocalRandom.current().nextInt(Konst.rnd3, Konst.rnd4);
+			Konst.y4 = Konst.y3+Konst.pAb;
 		}
 		if (Konst.x3<-100){
 			Konst.x3=800;
 			Konst.y5 = ThreadLocalRandom.current().nextInt(Konst.rnd1, Konst.rnd2);
-			Konst.y6 = ThreadLocalRandom.current().nextInt(Konst.rnd3, Konst.rnd4);
+			Konst.y6 = Konst.y5+Konst.pAb;
 		}
 		Konst.x1 = Konst.x1-1;
 		Konst.x2 = Konst.x2-1;
