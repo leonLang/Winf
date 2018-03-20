@@ -9,7 +9,10 @@ public class TextDisplay extends JLabel{
 	public static void font(Graphics g) {
 		Font font = new Font("Serif", Font.BOLD, 16);
 		g.setFont(font);
-	     g.drawString("Score:", 700, 30);
+	     g.drawString("Score:" + Konst.score, 700, 30);
 	     
+	}
+	public static void score(){
+		
 	}
 }

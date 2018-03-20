@@ -9,7 +9,7 @@ public class Collision {
 		if (Konst.BirdY < Konst.y1+500 && Konst.x1<450 && Konst.x1>350){
 			Konst.run=false;
 			}
-		if(Konst.BirdY > Konst.y2 && Konst.x1<450 && Konst.x1>350) {
+		if(Konst.BirdY > Konst.y2-50 && Konst.x1<450 && Konst.x1>350) {
 			Konst.run=false;
 		}
 		}
@@ -18,7 +18,7 @@ public class Collision {
 				
 				Konst.run=false;
 				}
-			if(Konst.BirdY > Konst.y4 && Konst.x2<450 && Konst.x2>350) {
+			if(Konst.BirdY > Konst.y4-50 && Konst.x2<450 && Konst.x2>350) {
 				Konst.run=false;
 			}
 			}
@@ -27,7 +27,7 @@ public class Collision {
 				
 				Konst.run=false;
 				}
-			if(Konst.BirdY > Konst.y6 && Konst.x3<450 && Konst.x3>350) {
+			if(Konst.BirdY > Konst.y6-50 && Konst.x3<450 && Konst.x3>350) {
 				Konst.run=false;
 			}
 			}

@@ -35,5 +35,8 @@ public class Konst {
 	public static int y4 = y3+pAb;
 	public static int y5 = ThreadLocalRandom.current().nextInt(rnd1, rnd2);
 	public static int y6 = y5+pAb;
+	
+	//Score
+	public static int score = 0;
 
 }
