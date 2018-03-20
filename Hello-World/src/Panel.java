@@ -31,6 +31,7 @@ public class Panel extends JPanel {
 			repaint();
 			} else {
 				System.out.println("game stop");
+				repaint();
 			}
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
