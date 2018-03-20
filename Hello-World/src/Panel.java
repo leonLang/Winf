@@ -41,7 +41,6 @@ public class Panel extends JPanel {
 	     g.drawImage(image, 0,0,Konst.HEIGHT,Konst.WIDTH, null);
 	     Bird.paint(g);
 	     Pipe.generate(g);
-
 	}
 
  

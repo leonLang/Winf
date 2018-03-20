@@ -32,4 +32,5 @@ public class Pipe {
 		
 		paintP(g, 100, 300);
 	}
+	
 }
