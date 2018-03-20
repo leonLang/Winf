@@ -12,7 +12,7 @@ public class Bird {
 	public static void move() {
 		if(Konst.BirdY >= 0) {
 		Konst.v = 0;
-		Konst.v -= 15;
+		Konst.v -= 10;
 		System.out.println(Konst.BirdY);
 		} else {
 			System.out.println("can t go higher");
