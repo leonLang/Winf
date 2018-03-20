@@ -19,6 +19,7 @@ public class Control implements KeyListener{
 		        	}
 		        	System.out.println(Konst.BirdY);
 		        	Konst.run = true;
+		        	
 		        }
 	      }
 	      public void keyReleased(KeyEvent e) {
