@@ -9,7 +9,9 @@ public class Pipe {
 	public static int x = 700;
 	public static int x1 = 1000;
 	public static int x2 = 1300;
-
+	public static int y = 100;
+	public static int y1 = 100;
+	public static int y2 = 100;
 
 	private static BufferedImage pipe1;
 	private static BufferedImage pipe2;
@@ -23,14 +25,15 @@ public class Pipe {
 		}
 	
 	public static void paintP(Graphics g,int x,int y) {
-
 		g.drawImage(pipe1, x,y,100,500, null);
-		g.drawImage(pipe2, x,y,100,500, null);
-		
+		g.drawImage(pipe2, x,y,100,500, null);	
 	}
+	
 	public static void generate(Graphics g) {
-		
-		paintP(g, 100, 300);
+		x = x-1;
+		paintP(g, x, y);
+		paintP(g, x1, y1);
+		paintP(g, x2, y2);
 	}
 	
 }
