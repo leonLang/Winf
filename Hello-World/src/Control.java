@@ -19,9 +19,10 @@ public class Control implements KeyListener{
 		        		Konst.press = true;
 		        	}
 		        	System.out.println(Konst.run);
-		        	Konst.run = true;
 		        	if(Konst.run == false) {
-		        	Konst.BirdY = Konst.WIDTH/2;
+		        	//System.exit(0);
+		        		System.exit(0);
+		        	Reset.reset();
 		        	}
 
 		        	

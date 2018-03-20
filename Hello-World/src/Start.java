@@ -7,7 +7,7 @@ public class Start {
 		g.setFont(font);
 		if(Konst.run == false) {
 
-		g.drawString("Press space to start",Konst.WIDTH/2,Konst.HEIGHT/2);
+		g.drawString("Press space to restart",Konst.WIDTH/2,Konst.HEIGHT/2);
 		}
 	}
 }

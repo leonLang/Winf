@@ -1,4 +1,6 @@
 import java.awt.Graphics;
+import java.awt.event.KeyEvent;
+import java.awt.event.KeyListener;
 import java.awt.image.BufferedImage;
 import java.io.IOException;
 
@@ -11,10 +13,9 @@ public class Panel extends JPanel {
 	private static final long serialVersionUID = 1L;
 	private BufferedImage image;
 
-
 	//Leon
 	public Panel() {
-	
+		
 		
 		setLayout(null);
 		try {
@@ -24,19 +25,23 @@ public class Panel extends JPanel {
 			e.printStackTrace();
 		}
 	}
+
+
+
 	
 @Override
 	public void paintComponent(Graphics g) {
 		super.paintComponent(g);
-		try {
-			Thread.sleep(16);
-			if(Konst.run) {
-			repaint();	
+			try {
+				Thread.sleep(16);
+				if(Konst.run) {
+				repaint();
+				}
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
 			}
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+		
 	     g.drawImage(image, 0,0,Konst.HEIGHT,Konst.WIDTH, null);
 	     TextDisplay.font(g);
 	     Bird.paint(g);
@@ -46,6 +51,7 @@ public class Panel extends JPanel {
 
 
 	}
+
 
 }
 
