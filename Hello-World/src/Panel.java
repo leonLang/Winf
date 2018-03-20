@@ -29,8 +29,10 @@ public class Panel extends JPanel {
 	public void paintComponent(Graphics g) {
 		super.paintComponent(g);
 		try {
-			Thread.sleep(16);		
+			Thread.sleep(16);
+			if(Konst.run) {
 			repaint();	
+			}
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -44,5 +46,6 @@ public class Panel extends JPanel {
 
 
 	}
+
 }
 

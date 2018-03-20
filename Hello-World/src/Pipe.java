@@ -40,11 +40,10 @@ public class Pipe {
 			Konst.y5 = ThreadLocalRandom.current().nextInt(Konst.rnd1, Konst.rnd2);
 			Konst.y6 = Konst.y5+Konst.pAb;
 		}
-		while(Konst.run) {
 		Konst.x1 = Konst.x1-1;
 		Konst.x2 = Konst.x2-1;
 		Konst.x3 = Konst.x3-1;
-		}
+		
 		paintP(g, Konst.x1, Konst.y1,Konst.y2);
 		paintP(g, Konst.x2, Konst.y3,Konst.y4);
 		paintP(g, Konst.x3, Konst.y5,Konst.y6);

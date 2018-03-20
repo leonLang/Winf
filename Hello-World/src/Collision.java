@@ -29,7 +29,7 @@ public class Collision {
 				}
 			else if(Konst.BirdY > Konst.y6-50 && Konst.x3<450 && Konst.x3>350) {
 				Konst.run=false;
-			}
+				}
 			}
 	}
 	public static void zaehler(){

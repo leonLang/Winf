@@ -1,6 +1,5 @@
 
 import java.awt.Graphics;
-import java.awt.Graphics2D;
 import java.awt.Rectangle;
 import java.awt.image.BufferedImage;
 import java.io.IOException;
@@ -37,7 +36,7 @@ public class Bird {
 		Konst.BirdY += Konst.v;
 		//System.out.println(Konst.v);
 		if(Konst.BirdY >= Konst.HEIGHT) {
-			Konst.run = false;
+			//Konst.run = false;
 			}
 		
 	}
@@ -53,13 +52,9 @@ public class Bird {
 		
 	}
 	public static void paint(Graphics g) {
-		Rectangle r = new Rectangle(Konst.BirdX, Konst.BirdY, 20, 20);
-		while(Konst.run) {
 		physiks();
-		}
 		BirdG();
-		collision();
-		
+		collision();	
 		g.drawImage(BL, Konst.BirdX, Konst.BirdY, 50, 50, null);
 
 		
