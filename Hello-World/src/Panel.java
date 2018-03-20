@@ -1,6 +1,4 @@
 import java.awt.Graphics;
-import java.awt.event.KeyEvent;
-import java.awt.event.KeyListener;
 import java.awt.image.BufferedImage;
 import java.io.IOException;
 
@@ -31,6 +29,7 @@ public class Panel extends JPanel {
 	
 @Override
 	public void paintComponent(Graphics g) {
+	//peter
 		super.paintComponent(g);
 			try {
 				Thread.sleep(16);
@@ -41,6 +40,7 @@ public class Panel extends JPanel {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
+			//leon
 		
 	     g.drawImage(image, 0,0,Konst.HEIGHT,Konst.WIDTH, null);
 	     TextDisplay.font(g);

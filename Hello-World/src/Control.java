@@ -1,4 +1,3 @@
-import java.awt.Graphics;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 
@@ -22,7 +21,6 @@ public class Control implements KeyListener{
 		        	if(Konst.run == false) {
 		        	//System.exit(0);
 		        		System.exit(0);
-		        	Reset.reset();
 		        	}
 
 		        	

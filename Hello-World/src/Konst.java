@@ -17,8 +17,10 @@ public class Konst {
 	public static String bird = "/bg.png";
 	public static String pipeO = "/tube1.png";
 	public static String pipeU = "/tube2.png";
+	//peter
 	public static String BirdUp ="/Frame-1.png";
 	public static String BirdDown ="/frame-4.png";
+	//leon
 
 	//Bird
 	public static int pAb = 750; //Der Abstand der Pipes
