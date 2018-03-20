@@ -1,6 +1,7 @@
 import java.awt.Graphics;
 import java.awt.image.BufferedImage;
 import java.io.IOException;
+import java.util.concurrent.ThreadLocalRandom;
 
 import javax.imageio.ImageIO;
 
@@ -9,13 +10,16 @@ public class Pipe {
 	public static int x1 = 700;
 	public static int x2 = 1000;
 	public static int x3 = 1300;
-	
-	public static int y1 = -100;
-	public static int y2 = 700;
-	public static int y3 = -100;
-	public static int y4 = 700;
-	public static int y5 = -100;
-	public static int y6 = 700;
+	public static int rnd1 = -300;
+	public static int rnd2 =-200;
+	public static int rnd3 = 600;
+	public static int rnd4 = 700;
+	public static int y1 = ThreadLocalRandom.current().nextInt(rnd1, rnd2);
+	public static int y2 = ThreadLocalRandom.current().nextInt(rnd3, rnd4);
+	public static int y3 = ThreadLocalRandom.current().nextInt(rnd1, rnd2);
+	public static int y4 = ThreadLocalRandom.current().nextInt(rnd3, rnd4);
+	public static int y5 = ThreadLocalRandom.current().nextInt(rnd1, rnd2);
+	public static int y6 = ThreadLocalRandom.current().nextInt(rnd3, rnd4);
 
 	private static BufferedImage pipe1;
 	private static BufferedImage pipe2;
@@ -32,16 +36,21 @@ public class Pipe {
 		g.drawImage(pipe1, x1,y1,100,500, null);
 		g.drawImage(pipe2, x1,y2,100,500, null);	
 	}
-	
 	public static void generate(Graphics g) {
 		if (x1<-100){
 			x1=800;
+			y1 = ThreadLocalRandom.current().nextInt(rnd1, rnd2);
+			y2 = ThreadLocalRandom.current().nextInt(rnd3, rnd4);
 		}
 		if (x2<-100){
 			x2=800;
+			y3 = ThreadLocalRandom.current().nextInt(rnd1, rnd2);
+			y4 = ThreadLocalRandom.current().nextInt(rnd3, rnd4);
 		}
 		if (x3<-100){
 			x3=800;
+			y5 = ThreadLocalRandom.current().nextInt(rnd1, rnd2);
+			y6 = ThreadLocalRandom.current().nextInt(rnd3, rnd4);
 		}
 		x1 = x1-1;
 		x2 = x2-1;
