@@ -17,6 +17,8 @@ public class Konst {
 	public static String bird = "/bg.png";
 	public static String pipeO = "/tube1.png";
 	public static String pipeU = "/tube2.png";
+	public static String BirdUp ="/Frame-1.png";
+	public static String BirdDown ="/Frame-2.png";
 
 	
 

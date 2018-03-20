@@ -3,12 +3,22 @@ import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.Rectangle;
 import java.awt.image.BufferedImage;
+import java.io.IOException;
+
+import javax.imageio.ImageIO;
 
 public class Bird {
-	public static BufferedImage BD;
-	public static BufferedImage BU;
+	public static BufferedImage BD;//BirdUp
+	public static BufferedImage BU;//BirdDown
+	public static BufferedImage BL;//BirdLive
 	//peter
 	public Bird() {
+		try {
+			BD = ImageIO.read(getClass().getResourceAsStream(Konst.BirdDown));
+			BU = ImageIO.read(getClass().getResourceAsStream(Konst.BirdUp));
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
 		
 	}
 	public static void move() {
@@ -32,7 +42,9 @@ public class Bird {
 	}
 	public static void BirdG() {
 		if(Konst.v <= 0) {
-			
+			BL = BD;
+		} else {
+			BL = BU;
 		}
 	}
 	public static void paint(Graphics g) {
@@ -40,8 +52,8 @@ public class Bird {
 		physiks();
 		BirdG();
 		
-		Graphics2D g2 = (Graphics2D)g;
-		g2.fill(r);
+		g.drawImage(BL, Konst.BirdX, Konst.BirdY, 50, 50, null);
+		
 	}
 
 	
