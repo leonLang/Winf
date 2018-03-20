@@ -9,8 +9,8 @@ public class Konst {
 	public static int BirdY = Konst.WIDTH*-1;
 	public static boolean run = true;
 	//physiks
-	public static int a = 1;
-	public static int v = 0;
+	public static double a = 0.45;
+	public static double v = 0;
 	
 	//Leon
 	public static String bird = "/bg.png";

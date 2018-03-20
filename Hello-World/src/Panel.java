@@ -27,7 +27,11 @@ public class Panel extends JPanel {
 		super.paintComponent(g);
 		try {
 			Thread.sleep(16);
+			if(Konst.run) {
 			repaint();
+			} else {
+				System.out.println("game stop");
+			}
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
