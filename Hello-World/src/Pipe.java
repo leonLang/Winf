@@ -23,5 +23,6 @@ public class Pipe {
 
 		g.drawImage(pipe1, 1000,900,100,100, null);
 		g.drawImage(pipe2, x,700,100,100, null);
+		
 	}
 }
