@@ -13,12 +13,16 @@ public class Control implements KeyListener{
 	      public void keyPressed(KeyEvent e) {
 		        if(e.getKeyCode() == KeyEvent.VK_SPACE) {
 		        	//System.out.println("space2");
+		        	if(Konst.press == false) {
+		        		Bird.move();
+		        		Konst.press = true;
+		        	}
 		        }
 	      }
 	      public void keyReleased(KeyEvent e) {
 		        if(e.getKeyCode() == KeyEvent.VK_SPACE) {
 		        	//System.out.println("space3");
-		        	Bird.move();
+		        	Konst.press = false;
 		        }
 	      }
 }
