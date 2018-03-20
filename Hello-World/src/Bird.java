@@ -38,7 +38,8 @@ public class Bird {
 		//System.out.println(Konst.v);
 		if(Konst.BirdY >= Konst.HEIGHT) {
 			Konst.run = false;
-		}
+			}
+		
 	}
 	public static void BirdG() {
 		if(Konst.v <= 0) {
@@ -53,14 +54,14 @@ public class Bird {
 	}
 	public static void paint(Graphics g) {
 		Rectangle r = new Rectangle(Konst.BirdX, Konst.BirdY, 20, 20);
+		while(Konst.run) {
 		physiks();
+		}
 		BirdG();
 		collision();
 		
 		g.drawImage(BL, Konst.BirdX, Konst.BirdY, 50, 50, null);
-		Graphics2D g2d = (Graphics2D) g;
-		Rectangle d = new Rectangle(20, 20 ,20, 20);
-		((Graphics2D) g).fill(d);
+
 		
 		
 		

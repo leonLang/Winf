@@ -37,14 +37,11 @@ public class Panel extends JPanel {
 		}
 	     g.drawImage(image, 0,0,Konst.HEIGHT,Konst.WIDTH, null);
 	     TextDisplay.font(g);
-		if(Konst.run) {
 	     Bird.paint(g);
 	     Pipe.generate(g);
 	     Collision.collision();
 	     Start.start(g);
-		} else {
-			System.out.println("game stop");
-		}
+
 
 	}
 }
