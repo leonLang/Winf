@@ -61,7 +61,7 @@ public class Bird {
 		Graphics2D g2d = (Graphics2D) g;
 		Rectangle d = new Rectangle(20, 20 ,20, 20);
 		((Graphics2D) g).fill(d);
-		d.
+		
 		
 		
 	}
