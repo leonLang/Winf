@@ -20,11 +20,11 @@ public class Frame extends JFrame {
 		
 	}
 	private void pan() {
+		addKeyListener(control);
 		Panel panel = new Panel();
 		Bird bird = new Bird();
 		Pipe pipe = new Pipe();
 		//Leon
-		addKeyListener(control);
 		
 		add(panel);
 		setVisible(true);

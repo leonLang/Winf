@@ -4,7 +4,7 @@ public class Collision {
 	//Leon
 	public static void collision() {
 		zaehler();
-		System.out.println(Konst.BirdY + Konst.y1);
+	//	System.out.println(Konst.BirdY + Konst.y1);
 		if(zaehler ==1) {
 		if (Konst.BirdY < Konst.y1+500 && Konst.x1<450 && Konst.x1>350){
 			Konst.run=false;
@@ -18,7 +18,7 @@ public class Collision {
 				
 				Konst.run=false;
 				}
-			if(Konst.BirdY > Konst.y4-50 && Konst.x2<450 && Konst.x2>350) {
+			else if(Konst.BirdY > Konst.y4-50 && Konst.x2<450 && Konst.x2>350) {
 				Konst.run=false;
 			}
 			}
@@ -27,7 +27,7 @@ public class Collision {
 				
 				Konst.run=false;
 				}
-			if(Konst.BirdY > Konst.y6-50 && Konst.x3<450 && Konst.x3>350) {
+			else if(Konst.BirdY > Konst.y6-50 && Konst.x3<450 && Konst.x3>350) {
 				Konst.run=false;
 			}
 			}

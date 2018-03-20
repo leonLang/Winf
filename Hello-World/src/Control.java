@@ -17,6 +17,8 @@ public class Control implements KeyListener{
 		        		Bird.move();
 		        		Konst.press = true;
 		        	}
+		        	System.out.println(Konst.BirdY);
+		        	Konst.run = true;
 		        }
 	      }
 	      public void keyReleased(KeyEvent e) {

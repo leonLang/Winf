@@ -45,6 +45,7 @@ public class Panel extends JPanel {
 	     Pipe.generate(g);
 	     TextDisplay.font(g);
 	     Collision.collision();
+	     Start.start(g);
 
 }
 }

@@ -7,7 +7,7 @@ public class Konst {
 	public static final String TITLE = "flappy";
 	public static final int BirdX = Konst.HEIGHT/2; 
 	public static int BirdY = Konst.WIDTH/2;
-	public static boolean run = true;
+	public static boolean run = false;
 	//physiks
 	public static double a = 0.35;
 	public static double v = 0;
