@@ -29,24 +29,23 @@ public class Panel extends JPanel {
 	public void paintComponent(Graphics g) {
 		super.paintComponent(g);
 		try {
-			Thread.sleep(16);
-			if(Konst.run) {
-			repaint();
-			} else {
-				System.out.println("game stop");
-			}
+			Thread.sleep(16);		
+			repaint();	
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-
 	     g.drawImage(image, 0,0,Konst.HEIGHT,Konst.WIDTH, null);
+	     TextDisplay.font(g);
+		if(Konst.run) {
 	     Bird.paint(g);
 	     Pipe.generate(g);
-	     TextDisplay.font(g);
 	     Collision.collision();
 	     Start.start(g);
+		} else {
+			System.out.println("game stop");
+		}
 
-}
+	}
 }
 
